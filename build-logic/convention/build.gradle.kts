@@ -35,5 +35,20 @@ tasks {
 
 gradlePlugin {
     plugins {
+        register("androidApplication") {
+            id =
+                libs.plugins.schet.android.application
+                    .asProvider()
+                    .get()
+                    .pluginId
+            implementationClass = "AndroidApplicationConventionPlugin"
+        }
+        register("androidApplicationCompose") {
+            id =
+                libs.plugins.schet.android.application.compose
+                    .get()
+                    .pluginId
+            implementationClass = "AndroidApplicationComposeConventionPlugin"
+        }
     }
 }
