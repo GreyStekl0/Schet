@@ -20,4 +20,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Schet"
+
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":app")
