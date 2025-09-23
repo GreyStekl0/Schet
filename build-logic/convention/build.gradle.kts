@@ -52,11 +52,18 @@ gradlePlugin {
         }
         register("androidLibrary") {
             id =
-                libs.plugins.nowinandroid.android.library
+                libs.plugins.schet.android.library
                     .asProvider()
                     .get()
                     .pluginId
             implementationClass = "AndroidLibraryConventionPlugin"
+        }
+        register("androidLibraryCompose") {
+            id =
+                libs.plugins.schet.android.library.compose
+                    .get()
+                    .pluginId
+            implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
     }
 }

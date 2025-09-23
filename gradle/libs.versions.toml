@@ -43,4 +43,5 @@ kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "ko
 schet-android-application = { id = "schet.android.application" }
 schet-android-application-compose = { id = "schet.android.application.compose" }
 schet-android-library = { id = "schet.android.library" }
+schet-android-library-compose = { id = "schet.android.library.compose" }
 
