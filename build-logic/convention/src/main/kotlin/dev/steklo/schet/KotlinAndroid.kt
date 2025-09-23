@@ -49,6 +49,7 @@ internal fun Project.configureKotlinJvm() {
  */
 private inline fun <reified T : KotlinBaseExtension> Project.configureKotlin() =
     configure<T> {
+        explicitApi()
         // Treat all Kotlin warnings as errors (disabled by default)
         // Override by setting warningsAsErrors=true in your ~/.gradle/gradle.properties
         val warningsAsErrors =
