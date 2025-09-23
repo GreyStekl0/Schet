@@ -5,6 +5,7 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.apply
 import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.dependencies
+import kotlin.text.get
 
 class AndroidFeatureConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
@@ -17,6 +18,8 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
 
             dependencies {
                 "implementation"(libs.findLibrary("androidx.hilt.navigation.compose").get())
+                "implementation"(libs.findLibrary("androidx.lifecycle.runtimeCompose").get())
+                "implementation"(libs.findLibrary("androidx.lifecycle.viewModelCompose").get())
             }
         }
     }
