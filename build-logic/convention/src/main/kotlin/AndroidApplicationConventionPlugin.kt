@@ -10,8 +10,6 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
         with(target) {
             apply(plugin = "com.android.application")
             apply(plugin = "org.jetbrains.kotlin.android")
-            apply(plugin = "nowinandroid.android.lint")
-            apply(plugin = "com.dropbox.dependency-guard")
 
             extensions.configure<ApplicationExtension> {
                 configureKotlinAndroid(this)
