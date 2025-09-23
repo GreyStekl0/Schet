@@ -65,5 +65,12 @@ gradlePlugin {
                     .pluginId
             implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
+        register("jvmLibrary") {
+            id =
+                libs.plugins.schet.jvm.library
+                    .get()
+                    .pluginId
+            implementationClass = "JvmLibraryConventionPlugin"
+        }
     }
 }
