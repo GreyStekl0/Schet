@@ -50,6 +50,13 @@ gradlePlugin {
                     .pluginId
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }
+        register("androidFeature") {
+            id =
+                libs.plugins.schet.android.feature
+                    .get()
+                    .pluginId
+            implementationClass = "AndroidFeatureConventionPlugin"
+        }
         register("androidLibrary") {
             id =
                 libs.plugins.schet.android.library
