@@ -50,5 +50,13 @@ gradlePlugin {
                     .pluginId
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }
+        register("androidLibrary") {
+            id =
+                libs.plugins.nowinandroid.android.library
+                    .asProvider()
+                    .get()
+                    .pluginId
+            implementationClass = "AndroidLibraryConventionPlugin"
+        }
     }
 }
