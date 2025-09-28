@@ -31,6 +31,8 @@ rootProject.name = "Schet"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":app")
 
+include(":feature:calculate")
+
 check(JavaVersion.current().isCompatibleWith(JavaVersion.VERSION_17)) {
     """
     Now in Android requires JDK 17+ but it is currently using JDK ${JavaVersion.current()}.
