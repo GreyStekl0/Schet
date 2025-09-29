@@ -30,6 +30,7 @@ rootProject.name = "Schet"
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":app")
+include(":core:designsystem")
 
 include(":feature:calculate")
 
