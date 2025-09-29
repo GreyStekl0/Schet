@@ -11,9 +11,6 @@ class JvmLibraryConventionPlugin : Plugin<Project> {
             apply(plugin = "org.jetbrains.kotlin.jvm")
 
             configureKotlinJvm()
-            dependencies {
-                "testImplementation"(libs.findLibrary("kotlin.test").get())
-            }
         }
     }
 }
